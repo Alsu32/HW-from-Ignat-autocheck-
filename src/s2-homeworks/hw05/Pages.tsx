@@ -4,7 +4,8 @@ import Error404 from './pages/Error404'
 import PreJunior from './pages/PreJunior'
 import Junior from './pages/Junior'
 import JuniorPlus from './pages/JuniorPlus'
-import {Switch} from "@mui/material";
+
+
 
 export const PATH = {
     PRE_JUNIOR: '/pre-junior',
@@ -26,28 +27,24 @@ function Pages() {
 
                 {/*роуты для /pre-junior, /junior, /junior-plus*/}
                 <Route
-                    //exact
                     path={PATH.PRE_JUNIOR}
                     element={<PreJunior/>}
                 />
                 <Route
-                    //exact
                     path={PATH.JUNIOR}
                     element={<Junior/>}
 
                 />
                 <Route
-                    //exact
                     path={PATH.JUNIOR_PLUS}
                     element={<JuniorPlus/>}
                 />
 
                 {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
                 <Route
-                    index
+                    path='/*'
                     element={<Error404/>}
                 />
-
             </Routes>
         </div>
     )
