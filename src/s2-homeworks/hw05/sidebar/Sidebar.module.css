@@ -1,5 +1,13 @@
 .sidebar {
-    display: none;
+    display: flex;
+    justify-content: right;
+    flex-direction: column;
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    background-color: #FFFFFF;
+    transform: translateX(-200px)
+
 }
 
 .sidebar.open {
@@ -10,17 +18,11 @@
     height: 100vh;
     position: absolute;
     background-color: #FFFFFF;
-
+    transform: none;
 }
 
 .background {
-    display: flex;
-    justify-content: right;
-    flex-direction: column;
-    width: 200px;
-    height: 100vh;
-    position: absolute;
-    background-color: #FFFFFF;
+
 }
 
 .nav {
