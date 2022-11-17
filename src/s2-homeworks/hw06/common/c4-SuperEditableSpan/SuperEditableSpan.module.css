@@ -1,11 +1,18 @@
 .spanBlock {
+    margin-bottom: 10px;
 }
 
 .span {
+    color: #0080ff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+
 }
 
 .input {
+    margin-left: 5px;
 }
 
 .pen {
+    margin-right: 5px;
 }
