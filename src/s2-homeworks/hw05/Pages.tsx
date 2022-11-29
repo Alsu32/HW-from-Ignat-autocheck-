@@ -24,8 +24,9 @@ function Pages() {
                     element={(
                         <>
                             <PreJunior/>
-                            <Outlet/>
+                            {/*<Outlet/>*/}
                         </>)}>
+                </Route>
 
                     {/*роуты для /pre-junior, /junior, /junior-plus*/}
                         <Route
@@ -43,7 +44,7 @@ function Pages() {
                         />
 
 
-                </Route>
+
 
 
                 {/*роут для несуществующей страницы должен отрисовать <Error404 />*/}
