@@ -33,7 +33,16 @@ function Clock() {
     const onMouseLeave = () => { // пишут студенты // спрятать дату если мышка не наведена
         setShow(false)
     }
-
+    const formatterTime = new Intl.DateTimeFormat("en", {
+        year:"numeric",
+        month: "numeric",
+        day: "numeric"
+    })
+    const formatterDate = new Intl.DateTimeFormat("en", {
+        hour:"numeric",
+        minute:"numeric",
+        second:"numeric"
+    })
 
     const stringTime = date?.toLocaleTimeString() || <br/>
     const stringDate = date?.toLocaleDateString() || <br/>
