@@ -44,8 +44,8 @@ function Clock() {
         second:"numeric"
     })
 
-    const stringTime = date?.toLocaleTimeString() || <br/>
-    const stringDate = date?.toLocaleDateString() || <br/>
+    const stringTime = formatterTime.format(date) || <br/>
+    const stringDate = formatterDate.format(date)  || <br/>
 
     const formatterDay = new Intl.DateTimeFormat("en", {
         weekday: 'long'
