@@ -34,14 +34,15 @@ function Clock() {
         setShow(false)
     }
     const formatterTime = new Intl.DateTimeFormat("ru", {
-        year:"numeric",
-        month: "numeric",
-        day: "numeric"
-    })
-    const formatterDate = new Intl.DateTimeFormat("ru", {
         hour:"numeric",
         minute:"numeric",
         second:"numeric"
+
+    })
+    const formatterDate = new Intl.DateTimeFormat("ru", {
+        year:"numeric",
+        month: "numeric",
+        day: "numeric"
     })
 
     const stringTime = formatterTime.format(date) || <br/>
