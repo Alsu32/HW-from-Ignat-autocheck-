@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, {useEffect, useState} from 'react'
 import s from './HW11.module.css'
 import s2 from '../../s1-main/App.module.css'
 import { restoreState } from '../hw06/localStorage/localStorage'
@@ -14,6 +14,7 @@ function HW11() {
     // for autotests // не менять // можно подсунуть в локалСторэдж нужные числа, чтоб увидеть как они отображаются
     const [value1, setValue1] = useState(restoreState<number>('hw11-value1', 0))
     const [value2, setValue2] = useState(restoreState<number>('hw11-value2', 100))
+
 
     const change = (event: Event, value: number | number[]) => {
         // пишет студент // если пришёл массив - сохранить значения в оба useState, иначе в первый
@@ -40,9 +41,8 @@ function HW11() {
                             //getAriaLabel={() => 'Minimum distance'}
                             value={value1}
                             onChange={change}
-                            valueLabelDisplay="auto"
                             sx={{color: '#70E500',
-                                width: '100px',
+                               // width: '100px',
                                 '& .css-eg0mwd-MuiSlider-thumb': {
                                     background: '#70E500'
                                 },
@@ -59,9 +59,8 @@ function HW11() {
                             // сделать так чтоб value1/2 изменялось // пишет студент
                             value={[value1, value2]}
                             onChange={change}
-                            valueLabelDisplay="auto"
                             sx={{color: '#70E500',
-                                width: '100px',
+                               // width: '100px',
                                 '& .css-eg0mwd-MuiSlider-thumb': {
                                     background: '#70E500'
                                 },
