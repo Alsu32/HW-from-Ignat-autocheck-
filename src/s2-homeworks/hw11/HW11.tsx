@@ -42,6 +42,7 @@ function HW11() {
                             onChange={change}
                             valueLabelDisplay="auto"
                             sx={{color: '#70E500',
+                                width: '100px',
                                 '& .css-eg0mwd-MuiSlider-thumb': {
                                     background: '#70E500'
                                 },
@@ -60,6 +61,7 @@ function HW11() {
                             onChange={change}
                             valueLabelDisplay="auto"
                             sx={{color: '#70E500',
+                                width: '100px',
                                 '& .css-eg0mwd-MuiSlider-thumb': {
                                     background: '#70E500'
                                 },
