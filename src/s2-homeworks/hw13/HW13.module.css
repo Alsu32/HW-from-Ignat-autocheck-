@@ -1,13 +1,21 @@
 .buttonsContainer {
+
 }
 
+
 .responseContainer {
+    display: flex;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
 }
 
 .imageContainer {
+    margin-right: 60px;
 }
 
 .image {
+    padding: 20px;
 }
 
 .textContainer{
