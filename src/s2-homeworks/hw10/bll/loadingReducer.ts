@@ -5,7 +5,6 @@ const initState = {
     isLoading: false,
 }
 export const loadingReducer = (state = initState, action: LoadingActionType): initStateType => { // fix any
-    debugger
     switch (action.type) {
         // пишет студент  // need to fix
         case 'CHANGE_LOADING':

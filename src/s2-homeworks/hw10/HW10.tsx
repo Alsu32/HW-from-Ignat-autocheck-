@@ -21,15 +21,12 @@ const HW10 = () => {
 
     const setLoading = () => { // пишет студент // показать крутилку на 1,5 секунд
         // dispatch
-        debugger
         dispatch(loadingAC(true))
         // setTimeout
-        debugger
         setTimeout(()=>{
             dispatch(loadingAC(false))
         }, 1500)
     }
-    debugger
     return (
         <div id={'hw10'}>
             <div className={s2.hwTitle}>Homework #10</div>
